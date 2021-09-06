@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>교보문고</title>
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+	<script src="js/main_slider.js"></script>
+	<!--메인 슬라이더-->
+	<script src="js/main_slide_nav.js"></script>
+	<!--메인 슬라이더 네비-->
+
+	<script src="js/today_book.js"></script>
+	<!--오늘의 책-->
+	<script src="js/hot_item.js"></script>
+	<!--지금뜨는 핫아이템-->
+	<script src="js/bestseller.js"></script>
+	<!--베스트셀러-->
+	<script src="js/this_book.js"></script>
+	<!--이럴땐 이런책-->
+
+
+	<!--open api-->
+	<script src="js/book_api.js"></script>
+	<script src="js/best_api.js"></script>
+
+
+	<!--json-->
+	<script src="js/slide_json.js"></script>
+	<script src="js/only_k_json.js"></script>
+	<script src="js/story_json.js"></script>
+	<script src="js/mood_json.js"></script>
+	<script src="js/this_book_json.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+	<div id="wrap">
+
+
+		<!--헤더 시작-->
+
+		<header>
+
+
+			<!--최상단 네비 -->
+
+			<div id="top_head">
+				<div class="top_box">
+					<ul class="store">
+						<li><a href="#">바로콘 <span>OFF</span></a></li>
+						<li><a href="#">매장 안내<i class="fas fa-chevron-down"></i></a></li>
+						<li><a href="#">회원혜택<i class="fas fa-chevron-down"></i></a></li>
+						<li><a href="#">Prestige Lounge</a></li>
+
+					</ul>
+
+					<ul class="login">
+						<li><a href="#">로그인</a></li>
+						<li>|</li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">출석체크</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">주문배송</a></li>
+						<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+
+					</ul>
+
+				</div>
+
+
+				<!--로고/ 서치창 / 광고창 -->
+
+				<div class="top_box2">
+
+					<div id="logo"><a href="main.html"><img src="img/logo_kyobo.png" alt="logo"></a></div>
+
+					<div class="search">
+
+						<div class="main_s_top">
+							<ul>
+								<li><a href="#">수능기초 10일격파</a></li>
+								<li>|</li>
+								<li><a href="#">굿바이 치질</a></li>
+								<li>|</li>
+								<li><a href="#">최초대거상수상</a></li>
+								<li>|</li>
+								<li><a href="#">박문각 강의무료</a></li>
+							</ul>
+
+							<span class="btn_left"><a href="#"><img src="img/btn_left.gif" alt="왼쪽버튼"></a></span>
+							<span class="btn_right"><a href="#"><img src="img/btn_right.gif" alt="오른쪽버튼"></a></span>
+						</div>
+
+						<input type="search" id="main_search" name="search" placeholder="학습천재가 되는 11가지 공부 비결" value="">
+
+					</div>
+
+					<div class="sub_ad">
+						<ul>
+
+							<li><a href="#"><img src="img/top_subevent_1.jpg" alt="상단서브이벤트"></a></li>
+							<li><a href="#"><img src="img/top_subevent_2.jpg" alt="상단서브이벤트"></a></li>
+							<li><a href="#"><img src="img/top_subevent_3.jpg" alt="상단서브이벤트"></a></li>
+							<li><a href="#"><img src="img/top_subevent_4.jpg" alt="상단서브이벤트"></a></li>
+
+						</ul>
+
+						<div class="list_nav">
+
+							<span class="btn_left"><a href="#"><img src="img/btn_left.gif" alt="왼쪽버튼"></a></span>
+							<span class="btn_right"><a href="#"><img src="img/btn_right.gif" alt="오른쪽버튼"></a></span>
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+
+			<!--메인 네비게이션 -->
+
+			<nav>
+				<div class="nav_box">
+					<div class="menu_icon"><a href="#"><i class="fas fa-bars"></i></a></div>
+					<ul class="main_menu">
+						<li><a href="sub.html">국내도서</a></li>
+						<li><a href="sub.html">외국도서</a></li>
+						<li><a href="sub.html">eBook<i class="fas fa-chevron-down"></i></a>
+							<ul class="main_s_menu">
+								<li><a href="#">일반도서</a></li>
+								<li><a href="#">로맨스/BL</a></li>
+								<li><a href="#">판타지/무협</a></li>
+								<li><a href="#">sam</a></li>
+								<li><a href="#">코믹스</a></li>
+								<li><a href="#">오디오북</a></li>
+								<li><a href="#">학술논문</a></li>
+							</ul>
+						</li>
+
+						<li><a href="sub.html">웹소설</a></li>
+
+
+						<li><a href="sub.html">기프트<i class="fas fa-chevron-down"></i></a>
+							<ul class="main_s_menu">
+								<li><a href="#">디자인문구</a></li>
+								<li><a href="#">디지털</a></li>
+								<li><a href="#">키친/푸드</a></li>
+								<li><a href="#">오피스</a></li>
+								<li><a href="#">필기구</a></li>
+							</ul>
+						</li>
+
+
+						<li><a href="sub.html">음반<i class="fas fa-chevron-down"></i></a>
+							<ul class="main_s_menu">
+								<li><a href="#">음반</a></li>
+								<li><a href="#">DVD</a></li>
+								<li><a href="#">블루레이</a></li>
+							</ul>
+						</li>
+
+						<li><a href="sub.html">중고장터</a></li>
+
+
+						<li><a href="sub.html"><i class="far fa-plus-square"></i></a>
+							<ul class="main_s_menu">
+								<li><a href="#">북캐스트</a></li>
+								<li><a href="#">북뉴스</a></li>
+								<li><a href="#">북로그</a></li>
+								<li><a href="#">북모닝</a></li>
+								<li><a href="#">문화행사</a></li>
+								<li><a href="#">스토리</a></li>
+								<li><a href="#">개인출판</a></li>
+							</ul>
+						</li>
+					</ul>
+
+
+					<ul class="sub_menu">
+						<li><a href="#">베스트</a></li>
+						<li><a href="#">신상품</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">사인품</a></li>
+						<li><a href="#">Picks</a></li>
+
+					</ul>
+
+				</div>
+
+
+			</nav>
+
+
+
+			<!--메인 슬라이더 -->
+
+			<div id="slidewrap">
+
+				<div class="slide">
+
+					<div class="slide_box1">
+
+						<ul class="slide_show">
+
+							<li>
+								<div class="box">
+									<a href="#"><img src="img/slide/01.jpg" alt="슬라이드1"></a>
+								</div>
+
+
+								<div class="box">
+									<div class="imgbox_s"></div>
+								</div>
+
+
+								<div class="box">
+									<div class="imgbox_s"></div>
+								</div>
+
+
+								<div class="box">
+									<div class="imgbox_s"></div>
+								</div>
+
+							</li>
+
+
+
+							<li>
+								<a href="#"><img src="img/slide/02.jpg" alt="슬라이드2"></a>
+							</li>
+
+
+
+							<li>
+								<a href="#"><img src="img/slide/03.jpg" alt="슬라이드3"></a>
+							</li>
+
+
+
+							<li>
+								<div class="box1">
+									<a href="#"><img src="img/slide/04_1.jpg" alt="슬라이드4"></a>
+									<a href="#"><img src="img/slide/04_2.jpg" alt="슬라이드4"></a>
+									<a href="#"><img src="img/slide/04_3.jpg" alt="슬라이드4"></a>
+								</div>
+							</li>
+
+
+
+							<li>
+								<a href="#"><img src="img/slide/05_1.jpg" alt="슬라이드5"></a>
+
+							</li>
+
+
+
+							<li>
+								<div class="box1">
+									<a href="#"><img src="img/slide/06_1.jpg" alt="슬라이드6"></a>
+									<a href="#"><img src="img/slide/06_2.jpg" alt="슬라이드6"></a>
+									<a href="#"><img src="img/slide/06_3.jpg" alt="슬라이드6"></a>
+								</div>
+							</li>
+
+
+
+							<li>
+								<div class="box1">
+									<a href="#"><img src="img/slide/07_1.jpg" alt="슬라이드7"></a>
+									<a href="#"><img src="img/slide/07_2.jpg" alt="슬라이드7"></a>
+									<a href="#"><img src="img/slide/07_3.jpg" alt="슬라이드7"></a>
+								</div>
+							</li>
+
+						</ul>
+
+						<span class="prev">&lt;</span>
+						<span class="next">&gt;</span>
+
+
+						<!--슬라이드 네비게이션-->
+
+						<ul class="slide_nav">
+							<li class="s_nav"><a href="#">요즘 이 책</a></li>
+							<li><a href="#">핫이슈</a></li>
+							<li><a href="#">새로나온책</a></li>
+							<li><a href="#">기획/테마</a></li>
+							<li><a href="#">eBook</a></li>
+							<li><a href="#">sam</a></li>
+							<li><a href="#">한정특가</a></li>
+						</ul>
+
+					</div>
+
+					<div class="slide_box2">
+
+						<div class="book_cast">
+							<div class="top_bc">
+								<a href="#"><img src="img/slide/bookcast_title_01.gif" alt="북캐스트 타이틀"></a>
+								<div class="imgbox">
+									<a href="#"><img src="img/slide/side_01.jpg" alt="북캐스트"></a>
+								</div>
+								<h3>저희 아기 탄생으로 휴무합니다</h3>
+								<p>따뜻한 시선을 잃지 않고 사는법</p>
+							</div>
+
+							<div class="bt_bc">
+								<ul>
+									<li><a href="#">찐 예술가 집사들의 절절한 고백</a></li>
+									<li><a href="#">이 부위는 절대 빼지 마세요</a></li>
+									<li><a href="#">매일 먹는 영양제, 효과있나요?</a></li>
+									<li><a href="#">수박과 차(tea)가 만나면?</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="book_news">
+							<a href="#"><img src="img/slide/side_02.png" alt="북뉴스"></a>
+						</div>
+
+
+						<div class="slide_ad">
+							<a href="#"><img src="img/slide/side_03.jpg" alt="광고"></a>
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+
+
+			<div id="slide_bottom1">
+				<div class="s_event1">
+
+					<div class="box"><a href="#"><img src="img/top_banner1.jpg" alt="이벤트배너1"></a></div>
+					<div class="box"><a href="#"><img src="img/top_banner2.jpg" alt="이벤트배너2"></a></div>
+					<div class="box"><a href="#"><img src="img/top_banner3.jpg" alt="이벤트배너3"></a></div>
+
+				</div>
+
+			</div>
+
+			<div id="slide_bottom2">
+				<div class="s_event2">
+
+					<div class="box"><a href="#"><img src="img/bn_01.jpg" alt="이벤트배너1"></a></div>
+					<div class="box"><a href="#"><img src="img/bn_02.jpg" alt="이벤트배너2"></a></div>
+					<div class="box"><a href="#"><img src="img/bn_03.jpg" alt="이벤트배너3"></a></div>
+
+				</div>
+
+
+			</div>
+
+
+		</header>
+
+		<!--헤더 끝-->
+
+
+
+
+		<!--오늘의 책 컨텐츠 시작-->
+
+		<section class="middle_section1">
+
+			<div id="today">
+
+
+				<div class="sub_title">
+					<h3>오늘의 책</h3>
+
+					<ul class="today_nav">
+						<li><a href="#">국내도서</a></li>
+						<li><a href="#">eBook</a></li>
+						<li><a href="#">sam</a></li>
+
+					</ul>
+
+					<a href="#"><i class="far fa-plus-square"></i></a>
+
+
+				</div>
+
+
+				<div class="twrap">
+
+
+					<!--오늘의 책 /국내도서-->
+
+					<div class="today_box1">
+
+						<div class="tbox1_1">
+							<div class="gallery">
+								<div class="gallery-item1"><img src="img/today/book_01.jpg" alt="달러구트"></div>
+								<div class="gallery-item2"><img src="img/today/book_02.jpg" alt="널 위한 문화예술"></div>
+								<div class="gallery-item3"><img src="img/today/book_03.jpg" alt="경제마스터"></div>
+
+								<div class="pages">
+									<div class="active"></div>
+									<div></div>
+									<div></div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<!--   카드뉴스1-1   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page01-1"></li>
+
+
+						</ul>
+
+						<!--   카드뉴스1-2   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page01-2"></li>
+
+
+
+						</ul>
+
+
+
+
+
+						<!--   카드뉴스1-3   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page01-3"></li>
+
+
+
+						</ul>
+
+
+
+						<!--타이틀-->
+						<div class="tbox1_3">
+							<div class="t_title">
+								<h3>달러구트 꿈 백화점. 2</h3>
+								<p>이미예 지음 | 팩토리나인</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/20</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>널 위한 문화예술</h3>
+								<p> 오대우 , 이지현 , 이정우 지음 | 웨일북(whalebooks) </p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/12</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>존리의 경제 마스터</h3>
+								<p> 존 리 , 임우영 지음 | 미래엔아이세움</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/12</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+
+					<!--오늘의 책 /ebook-->
+
+					<div class="today_box1">
+
+						<div class="tbox1_1">
+							<div class="gallery">
+								<div class="gallery-item1"><img src="img/today/ebook_01.jpg" alt="없던 오늘"></div>
+								<div class="gallery-item2"><img src="img/today/ebook_02.jpg" alt="다시쓰는 착한 미술사"></div>
+								<div class="gallery-item3"><img src="img/today/ebook_03.jpg" alt="아버지의 첫 직업은 머슴이였다">
+								</div>
+
+								<div class="pages">
+									<div class="active"></div>
+									<div></div>
+									<div></div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<!--   카드뉴스1-1   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page02-1"><img src="img/today/ebook_01_1.jpg" alt="1"></li>
+							<li class="t_page02-1"><img src="img/today/ebook_01_2.jpg" alt="2"></li>
+							<li class="t_page02-1"><img src="img/today/ebook_01_2.jpg" alt="3"></li>
+
+
+						</ul>
+
+						<!--   카드뉴스1-2   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page02-2"><img src="img/today/ebook_02_1.jpg" alt="1"></li>
+							<li class="t_page02-2"><img src="img/today/ebook_02_2.jpg" alt="2"></li>
+							<li class="t_page02-2"><img src="img/today/ebook_02_3.jpg" alt="3"></li>
+
+
+
+						</ul>
+
+
+
+
+
+						<!--   카드뉴스1-3   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page02-3"><img src="img/today/ebook_03_1.jpg" alt="1"></li>
+							<li class="t_page02-3"><img src="img/today/ebook_03_2.jpg" alt="2"></li>
+							<li class="t_page02-3"><img src="img/today/ebook_03_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+
+
+						<!--타이틀-->
+						<div class="tbox1_3">
+							<div class="t_title">
+								<h3>없던 오늘</h3>
+								<p>유병욱 지음 | 북하우스</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>다시 쓰는 착한 미술사 </h3>
+								<p> 허나영 지음 | 타인의사유 </p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>아버지의 첫 직업은 머슴이었다</h3>
+								<p> 한대웅 지음 | 페이퍼로드</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<!--오늘의 책 /sam-->
+
+					<div class="today_box1">
+
+						<div class="tbox1_1">
+							<div class="gallery">
+								<div class="gallery-item1"><img src="img/today/sam_01.jpg" alt="오늘도 약을 먹었습니다"></div>
+								<div class="gallery-item2-1"><img src="img/today/sam_02.jpg" alt="맛잇는 과일"></div>
+								<div class="gallery-item3-1"><img src="img/today/sam_03.jpg" alt=" 하루키"></div>
+								<div class="gallery-item4"><img src="img/today/sam_04.jpg" alt="청약의 시간"></div>
+								<div class="gallery-item5"><img src="img/today/sam_05.jpg" alt="비즈니스영어"></div>
+
+								<div class="pages">
+									<div class="active"></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<!--   카드뉴스1-1   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page03-1"><img src="img/today/sam_01_1.jpg" alt="1"></li>
+							<li class="t_page03-1"><img src="img/today/sam_01_2.jpg" alt="2"></li>
+							<li class="t_page03-1"><img src="img/today/sam_01_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+						<!--   카드뉴스1-2   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page03-2"><img src="img/today/sam_02_1.jpg" alt="1"></li>
+							<li class="t_page03-2"><img src="img/today/sam_02_2.jpg" alt="2"></li>
+							<li class="t_page03-2"><img src="img/today/sam_02_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+
+
+
+
+						<!--   카드뉴스1-3   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page03-3"><img src="img/today/sam_03_1.jpg" alt="1"></li>
+							<li class="t_page03-3"><img src="img/today/sam_03_2.jpg" alt="2"></li>
+							<li class="t_page03-3"><img src="img/today/sam_03_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+
+
+						<!--   카드뉴스1-4   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page03-4"><img src="img/today/sam_04_1.jpg" alt="1"></li>
+							<li class="t_page03-4"><img src="img/today/sam_04_2.jpg" alt="2"></li>
+							<li class="t_page03-4"><img src="img/today/sam_04_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+
+
+
+						<!--   카드뉴스1-5   -->
+
+						<ul class="tbox1_2">
+
+							<li class="t_page03-5"><img src="img/today/sam_05_1.jpg" alt="1"></li>
+							<li class="t_page03-5"><img src="img/today/sam_05_2.jpg" alt="2"></li>
+							<li class="t_page03-5"><img src="img/today/sam_05_3.jpg" alt="3"></li>
+
+
+						</ul>
+
+
+						<!--타이틀-->
+						<div class="tbox1_3">
+							<div class="t_title">
+								<h3>오늘도 약을 먹었습니다</h3>
+								<p>박한슬 지음 | 북트리거 </p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>1% 맛있는 과일 고르는 법 </h3>
+								<p> 강야곱 지음 | 라온북 </p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>달리기는 제가 하루키보다 낫습니다</h3>
+								<p> 박태외(막시) 지음 | 더블엔</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>임성배의 청약의 시간(2021)</h3>
+								<p> 임성배 지음 | 스마트북스</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+							<div class="t_title">
+								<h3>비즈니스 영어 이메일 한 권으로 끝내기 </h3>
+								<p> 제니 조 , 마이클 매닝 , 피터 래버 , 최준영 지음 | 성안당</p>
+								<span>
+									<i class="fas fa-caret-left today_bookbox_subtitle_prev"></i>
+									<span class="today_bookbox_subtitle_count">1/3</span>
+									<i class="fas fa-caret-right today_bookbox_subtitle_next"></i>
+								</span>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+
+
+				</div>
+				<!--twrap 닫음 -->
+
+
+				<div class="today_box2">
+
+					<div class="tbox2_1"><a href="#"><img src="img/slide/welbigwide.jpg" alt="오늘의 책 광고1"></a></div>
+					<div class="tbox2_2"><a href="#"><img src="img/slide/w.jpg" alt="오늘의 책 광고1"></a></div>
+
+				</div>
+
+
+			</div>
+
+
+			<div id="new">
+
+				<div class="sub_title">
+
+					<h3>화제의 신간</h3>
+
+					<ul class="new_nav">
+						<li><a href="#">국내도서</a></li>
+						<li><a href="#">외국도서</a></li>
+						<li><a href="#">eBook</a></li>
+						<li><a href="#">sam</a></li>
+						<li><a href="#">음반/기프트</a></li>
+					</ul>
+
+					<a href="#"><i class="far fa-plus-square"></i></a>
+
+				</div>
+
+
+				<!--화제의 신간/ 국내도서-->
+
+				<div class="new_book_section">
+
+					<ul class="section_ibox1">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+					<ul class="section_ibox1">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+
+					<ul class="section_ibox1">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<!--화제의 신간/ 외국도서-->
+
+				<div class="new_book_section">
+
+					<ul class="section_ibox2">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+					<ul class="section_ibox2">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+
+					<ul class="section_ibox2">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+
+
+				<!--화제의 신간/ ebook-->
+
+				<div class="new_book_section">
+
+					<ul class="section_ibox3">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+					<ul class="section_ibox3">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+				</div>
+
+
+
+
+
+
+				<!--화제의 신간/ sam-->
+
+				<div class="new_book_section">
+
+					<ul class="section_ibox4">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+					<ul class="section_ibox4">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+				</div>
+
+
+
+
+
+
+				<!--화제의 신간/ 음반,기프트-->
+
+				<div class="new_book_section">
+
+					<ul class="section_ibox5">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+					<ul class="section_ibox5">
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+						<li class="new_book"></li>
+
+
+					</ul>
+
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div id="pick">
+
+				<div class="sub_title">
+
+					<h3>○○○님을 위한 Picks 추천 샘플</h3>
+
+					<span>[로그인 하고 나만의 AI 맞춤추천 받아보세요]</span>
+
+				</div>
+
+
+				<ul class="section_ibox">
+
+					<li class="pick_style">
+						<h3><strong>감수성이 예민한 신중형</strong></h3>
+						<img src="img/bg_picks.png" alt="아이콘">
+						<ul>
+							<li>&gt;선호분야: 시/에세이/소설</li>
+							<li>&gt;선호작가: 김영하</li>
+							<li>&gt;독서주기: 한달1.0권</li>
+							<li>&gt;독서등급: Lv.7</li>
+						</ul>
+
+					</li>
+
+					<li class="pick_book">
+
+					</li>
+
+
+					<li class="pick_book">
+
+					</li>
+
+
+					<li class="pick_book">
+
+					</li>
+
+
+				</ul>
+
+
+				<div class="keyword_pick">
+
+					<h3 class="key_title">키워드 Pick</h3>
+
+
+					<ul class="keyword">
+						<li><a href="#">괴테</a></li>
+						<li><a href="#">천자문</a></li>
+						<li><a href="#">소설</a></li>
+						<li><a href="#">한국소설</a></li>
+						<li><a href="#">마르쿠스 아우렐리우스</a></li>
+						<li><a href="#">철학자</a></li>
+
+					</ul>
+
+
+				</div>
+
+			</div>
+
+
+
+
+			<div id="only_k">
+
+				<div class="only_title">
+					<img src="img/only_kyobo.gif" alt="오직교보">
+				</div>
+
+				<div class="contents">
+
+					<div class="prev_btn"><i class="fas fa-chevron-left"></i></div>
+
+					<ul class="only">
+
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+
+					</ul>
+
+					<div class="next_btn"><i class="fas fa-chevron-right"></i></div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<div id="hot_item">
+
+			<div class="hot_section">
+
+				<div class="hbox1">
+					<img src="img/hot_zone.gif" alt="핫타이틀">
+				</div>
+
+				<div class="hbox2">
+
+					<ul class="hslide">
+
+						<li><a href="#"><img src="img/bnK_g01.jpg" alt="오직 교보슬라이드1"></a></li>
+						<li><a href="#"><img src="img/bnK_g02.jpg" alt="오직 교보슬라이드2"></a></li>
+						<li><a href="#"><img src="img/bnK_g03.jpg" alt="오직 교보슬라이드3"></a></li>
+						<li><a href="#"><img src="img/bnK_g04.jpg" alt="오직 교보슬라이드4"></a></li>
+
+					</ul>
+
+					<span class="prev_button">&lt;</span>
+					<span class="next_button">&gt;</span>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+		<section class="middle_section2">
+
+			<div id="this">
+
+				<div class="sub_title">
+
+					<h3>이럴 땐 이런 책</h3>
+
+					<a href="#"><i class="far fa-plus-square"></i></a>
+
+				</div>
+
+				<div class="section_ibox">
+
+					<div class="this_box"><img src="img/this_title.jpg" alt="인생책"></div>
+
+
+					<div class="this_box">
+						<div class="this_title">
+							<div class="title"></div>
+							<ul class="tag">
+								<li class="tag1"></li>
+								<li class="tag2"></li>
+							</ul>
+						</div>
+
+						<ul class="this_contents">
+
+							<li class="top"><a href="#"></a></li>
+
+							<li class="list1"></li>
+							<li class="list2"></li>
+							<li class="list3"></li>
+							<li class="list4"></li>
+						</ul>
+
+					</div>
+
+
+					<div class="this_box">
+						<div class="this_title">
+							<div class="title"></div>
+							<ul class="tag">
+								<li class="tag1"></li>
+								<li class="tag2"></li>
+							</ul>
+						</div>
+
+						<ul class="this_contents">
+
+							<li class="top"><a href="#"></a></li>
+
+							<li class="list1"></li>
+							<li class="list2"></li>
+							<li class="list3"></li>
+							<li class="list4"></li>
+						</ul>
+
+					</div>
+
+					<div class="this_box">
+						<div class="this_title">
+							<div class="title"></div>
+							<ul class="tag">
+								<li class="tag1"></li>
+								<li class="tag2"></li>
+							</ul>
+						</div>
+
+						<ul class="this_contents">
+
+							<li class="top"><a href="#"></a></li>
+
+							<li class="list1"></li>
+							<li class="list2"></li>
+							<li class="list3"></li>
+							<li class="list4"></li>
+						</ul>
+
+					</div>
+
+
+
+				</div>
+
+
+			</div>
+
+
+			<div id="story_k">
+
+				<div class="sub_title">
+					<h3>스토리 : K</h3>
+				</div>
+
+				<div class="story_section">
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+
+					<div class="box2">
+
+						<div class="imgbox1"></div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+		<div id="best">
+
+			<div class="best_section">
+
+				<div class="sub_title">
+
+					<h3>베스트셀러</h3>
+
+
+					<ul class="best_nav">
+						<li><a href="#">교보문고종합</a></li>
+						<li><a href="#">인터넷일간</a></li>
+						<li><a href="#">외국도서</a></li>
+						<li><a href="#">eBook</a></li>
+						<li><a href="#">오디오북</a></li>
+						<li><a href="#">sam</a></li>
+						<li><a href="#">기프트</a></li>
+					</ul>
+
+					<a href="#"><i class="far fa-plus-square"></i></a>
+
+				</div>
+
+
+				<div class="bbox1">
+
+					<ul class="top_two">
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book1"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+
+					<ul class="top_two">
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book2"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+					<ul class="top_two">
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book3"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+					<ul class="top_two">
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book4"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+
+					<ul class="top_two">
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book5"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+					<ul class="top_two">
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book6"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox1">
+
+					<ul class="top_two">
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>01</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>02</h3>
+								</div>
+							</a></li>
+					</ul>
+
+
+					<ul class="best_chart">
+
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>03</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>04</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>05</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>06</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>07</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>08</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>09</h3>
+								</div>
+							</a></li>
+
+						<li class="best_book7"><a href="#">
+								<div class="count_page">
+									<h3>10</h3>
+								</div>
+							</a></li>
+
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="bbox2">
+
+					<ul class="best_side">
+
+						<li class="book_side">북튜버의 책방</li>
+						<li class="ebook_side">추천 eBook</li>
+
+					</ul>
+
+
+					<div class="b_content">
+						<div class="bside">
+
+							<div class="b_1"><a href="#">
+									<img src="img/booktube.jpg" alt="북튜버1">
+
+									<p>[북튜버의 책방]<br>
+										<span>6분 클래식, 전쟁이 지나간 자리에 여성은</span>
+									</p>
+								</a></div>
+
+
+							<img src="img/bg_line_h3.gif" alt="라인">
+
+							<div class="b_2"><a href="#">
+									<img src="img/booktube_02.jpg" alt="북튜버2">
+									<h5>불신시대(한국문학전집 48)</h5>
+								</a></div>
+
+
+						</div>
+
+
+						<div class="bside">
+
+							<div class="b_contain">
+								<div class="b_book1"><a href="#"></a></div>
+								<div class="b_book1"><a href="#"></a></div>
+								<div class="b_book1"><a href="#"></a></div>
+								<div class="b_book1"><a href="#"></a></div>
+								<div class="b_book1"><a href="#"></a></div>
+								<div class="b_book1"><a href="#"></a></div>
+
+
+								<span class="bs_prev_01">&lt;</span>
+								<span class="bs_next_01">&gt;</span>
+
+							</div>
+
+
+							<img src="img/bg_line_h3.gif" alt="라인">
+
+							<div class="b_contain">
+								<div class="b_book2"><a href="#"></a></div>
+								<div class="b_book2"><a href="#"></a></div>
+								<div class="b_book2"><a href="#"></a></div>
+								<div class="b_book2"><a href="#"></a></div>
+								<div class="b_book2"><a href="#"></a></div>
+								<div class="b_book2"><a href="#"></a></div>
+
+
+
+								<span class="bs_prev_02">&lt;</span>
+								<span class="bs_next_02">&gt;</span>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<section class="middle_section3">
+
+
+			<div id="this_week">
+
+				<div class="sub_title">
+
+					<h3>이주의 책</h3>
+
+				</div>
+
+
+				<ul class="this_section">
+
+
+					<li class="this_book">
+					</li>
+
+
+					<li class="this_book">
+					</li>
+
+					<li class="this_book">
+					</li>
+
+					<li class="this_book">
+					</li>
+
+					<li class="this_book">
+					</li>
+
+					<li class="this_book">
+					</li>
+
+
+
+
+				</ul>
+
+				<div class="bg_line"></div>
+
+
+			</div>
+
+
+
+
+			<div id="c_suggest">
+				<div class="sub_title">
+
+					<h3>클릭! 실시간 추천</h3>
+
+				</div>
+
+
+				<div class="c_section">
+
+
+					<ul class="recent">
+						<li class="recent_title">최근 본 상품</li>
+						<li class="c_list"></li>
+
+					</ul>
+
+
+
+					<div class="c_wrap">
+						<h5>추천 상품</h5>
+						<ul class="c_content">
+
+							<li class="c_list">
+
+							</li>
+
+
+							<li class="c_list">
+
+							</li>
+
+
+							<li class="c_list">
+
+							</li>
+
+
+							<li class="c_list">
+
+							</li>
+
+
+						</ul>
+					</div>
+
+
+				</div>
+
+
+
+				<div class="bg_line"></div>
+
+
+
+			</div>
+
+
+
+
+			<div id="good_book">
+				<div class="sub_title">
+
+					<h3>Klover 평점 좋은책</h3>
+
+					<a href="#"><i class="far fa-plus-square"></i></a>
+
+				</div>
+
+
+
+
+				<ul class="recent">
+					<li class="recent_title">오늘의 발견</li>
+
+					<li class="c_book">
+
+						<div class="cbook"></div>
+
+						<div class="star_count">
+							<img src="img/klover01.png" alt="클로버">
+							<p>9.4</p>
+						</div>
+
+					</li>
+
+				</ul>
+
+
+
+
+
+
+				<ul class="c_content">
+
+
+
+					<li class="c_book">
+						<div class="cbook"></div>
+						<div class="star_count">
+							<img src="img/klover01.png" alt="클로버">
+							<p>9.4</p>
+						</div>
+					</li>
+
+
+					<li class="c_book">
+						<div class="cbook"></div>
+						<div class="star_count">
+							<img src="img/klover01.png" alt="클로버">
+							<p>9.4</p>
+						</div>
+					</li>
+
+
+					<li class="c_book">
+						<div class="cbook"></div>
+						<div class="star_count">
+							<img src="img/klover01.png" alt="클로버">
+							<p>9.4</p>
+						</div>
+					</li>
+
+
+					<li class="c_book">
+
+						<div class="cbook"></div>
+						<div class="star_count">
+							<img src="img/klover01.png" alt="클로버">
+							<p>9.4</p>
+						</div>
+					</li>
+
+
+				</ul>
+
+
+
+
+
+				<div class="bg_line"></div>
+
+
+			</div>
+
+
+
+
+
+			<div id="maker">
+				<div class="sub_title">
+					<h3>감성메이커</h3>
+				</div>
+
+
+
+				<ul class="maker_section">
+
+					<li class="mood">
+						<div class="book_image"></div>
+
+
+					</li>
+
+					<li class="mood">
+						<div class="book_image"></div>
+
+
+					</li>
+
+					<li class="mood">
+						<div class="book_image"></div>
+
+
+					</li>
+
+					<li class="mood">
+						<div class="book_image"></div>
+
+
+					</li>
+
+
+				</ul>
+
+			</div>
+
+
+
+		</section>
+
+
+		<!--공지사항-->
+
+		<div id="bottom_section">
+			<div class="b_wrap">
+
+
+				<div class="bottom_box1">
+					<div class="b_box1">
+						<h4>공지사항</h4>
+						<div class="notice">
+							<p>우체국택배 배송지연 안내 (7/30~8/2)</p>
+						</div>
+					</div>
+
+
+					<div class="b_box2">
+						<h4>당첨</h4>
+						<div class="notice">
+							<p>[비즈니스]&lt;박병창의 돈을 부르는 매매의 기술&gt; 출간...</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="bottom_box2">
+
+					<div class="bt_content">
+						<h4>회원 혜택</h4>
+
+						<ul>
+							<li><a href="#">Prestige :Language</a></li>
+							<li><a href="#">신규회원 혜택</a></li>
+							<li><a href="#">등급별 혜택</a></li>
+							<li><a href="#">출석체크</a></li>
+							<li><a href="#">참좋은 교보문고</a></li>
+						</ul>
+
+
+					</div>
+
+
+
+					<div class="bt_content">
+						<h4>쇼핑 TIP</h4>
+
+						<ul>
+							<li><a href="#">제휴포인트/상품권</a></li>
+							<li><a href="#">교보문고 기프트카드</a></li>
+							<li><a href="#">대량구매</a></li>
+							<li><a href="#">출판사전화번호안내</a></li>
+
+						</ul>
+
+
+					</div>
+
+
+
+					<div class="bt_content">
+						<h4>빠른 서비스</h4>
+
+						<ul>
+							<li><a href="#">북클럽카드 등록</a></li>
+							<li><a href="#">영수증 후 적립</a></li>
+							<li><a href="#">교보캐시 조회·충전</a></li>
+							<li><a href="#">교보e캐시 조회·충전</a></li>
+							<li><a href="#">기프트카드 조회·충전</a></li>
+							<li><a href="#">미이용회원 조회/복원</a></li>
+							<li><a href="#">협력사여러분</a></li>
+						</ul>
+
+
+
+					</div>
+
+
+
+					<div class="bt_content">
+						<h4>교보문고 소식</h4>
+
+						<ul>
+							<li><a href="#">페이스북</a></li>
+							<li><a href="#">트위터(교보문고)</a></li>
+							<li><a href="#">트위터(인터넷교보문고)</a></li>
+							<li><a href="#">인스타그램</a></li>
+							<li><a href="#">유튜브</a></li>
+						</ul>
+
+
+					</div>
+
+
+
+					<div class="bt_content">
+						<h4>FAQ</h4>
+
+						<ul>
+							<li><a href="#">주문 · 결제</a></li>
+							<li><a href="#">eBook</a></li>
+							<li><a href="#">도서 · 상품정보</a></li>
+							<li><a href="#">중고장터</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="bottom_box3">
+
+					<span class="button">모바일교보문고 ></span>
+
+					<span class="button">바로 찾는 바로드림 ></span>
+
+					<span class="button">중고장터 스마트비교 ></span>
+
+					<span class="button">교보문고 기프트카드 ></span>
+
+					<span class="button">매장 안내 ></span>
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!--푸터-->
+
+		<footer>
+			<div id="info">
+				<div class="footer_wrap">
+					<ul class="info_list">
+						<li><a href="#">회사소개</a></li>
+						<li>|</li>
+						<li><a href="#">이용약관</a></li>
+						<li>|</li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li>|</li>
+						<li><a href="#">청소년보호정책</a></li>
+						<li>|</li>
+						<li><a href="#">고객센터</a></li>
+						<li>|</li>
+						<li><a href="#">협력사여러분</a></li>
+						<li>|</li>
+						<li><a href="#">제휴제한</a></li>
+						<li>|</li>
+						<li><a href="#">광고문의</a></li>
+						<li>|</li>
+						<li><a href="#">채용정보</a></li>
+
+					</ul>
+
+					<div class="footer_list">
+						<h3>FAMILY SITE</h3>
+					</div>
+
+
+				</div>
+
+
+
+				<div class="footer_wrap">
+					<div class="f1">
+
+						<img src="img/logo_footer.png" alt="logo">
+
+						<address>
+							㈜ 교보문고 서울시 종로구 종로 1 대표이사 : 안병현 <br>
+							사업자등록번호 : 102-81-11670 <br>
+							<span>대표전화 : 1544-1900 (발신자 부담전화)</span> 팩스 : 0502-987-5711 (지역번호공통)<br>
+							서울특별시 통신판매업신고번호 : 제 653호 ▶<a href="#">사업자정보확인</a><br><br>
+							COPYRIGHT(C) KYOBO BOOK CENTRE ALL RIGHTS RESERVED.
+						</address>
+
+					</div>
+
+
+
+					<div class="f2">
+						<p>
+							LG U+ 구매안전서비스 <a href="#">▶서비스 가입 확인</a> <br>
+							고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 LG유플러스의 구매안전서비스를 이용하실 수 있습니다.
+						</p>
+
+						<div class="fbox">
+							<img src="img/footer.png" alt="정보보호관리">
+							<p>정보보호관리체계<br>
+								ISMS 인증획득</p>
+							<p>[인증범위] 온라인 교보문고 서비스 운영<br>
+								[유효기간] 2020.11.04. ~ 2023.11.03.</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+		</footer>
+
+
+	</div>
+
+
+
+</body>
+
+</html>

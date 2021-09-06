@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+
+
+#sub_main {width:1000px; height: auto; margin: 0 auto; display: flex; flex-wrap: wrap; border-bottom: 8px solid #ddd;}
+.genre_category {width: 100%; height: 50px; }
+.genre_category > ul {width: 100%; height: 100%;  border-bottom: 1px solid #ddd;}
+.genre_category > ul > li {float: left;   font-size: 12px;  padding:18px 0; margin: 0 10px 0 0; position: relative;}
+.genre_category > ul > li > a {border: 1px solid #ddd; padding: 3px 5px;}
+.genre_category > ul > li:first-child a {border: none;}
+
+.sub_genre {width: auto; height: auto; background-color: royalblue; position: absolute; top: 40px; border: 1px solid #666; display: flex; display: none;}
+.sub_genre > ul {background-color: skyblue; width: 120px; padding: 5px 10px;} 
+.sub_genre > ul > li {padding: 5px 0;}
+
+
+
+/*메인 왼쪽사이드*/
+
+.sub_m1 {width: 200px; height: 100%;  padding: 30px 0; display: flex; flex-direction: column;}
+.sub_m1 >.sbox1 {width:100%; height: auto;   margin: 2% 0;}
+.sub_m1 >.sbox1 > ul {display: flex; padding: 10px 0;}
+.sub_m1 >.sbox1 > ul > li {padding: 0 14px; font-size: 13px;}
+
+
+.sub_m1 >.sbox1 > .btn_box { width: 100%; height: 40px; font-size: 13px; border: 1px solid #ddd; margin: 0 0 5px 0; text-align: center; line-height: 35px; color:#f84450; font-weight: bold;}
+
+
+.sub_m1 > .pick_tag {width: 100%; height: 200px;  margin: 10px 0; border: 1px solid #ddd;}
+.pick_title {width:100%; height: 50px; padding: 15px; display: flex; justify-content: space-between; font-size: 14px;}
+
+.sub_m1 > .pick_tag > ul {padding: 0 15px;}
+.sub_m1 > .pick_tag > ul > li { font-size: 14px; float: left; margin: 0 5px 20px 0;}
+.sub_m1 > .pick_tag > ul > li > a {border: 1px solid #ddd; padding: 3px 10px; border-radius: 15px;}
+
+
+.sub_m1 > .sbox2 {width:100%; height: auto;  margin: 2% 0 0 0; border: 1px solid #ddd;}
+.sub_m1 > .sbox2 > h3 {margin: 10px 0; font-size: 14px; text-align: center;}
+.sub_m1 > .sbox2 > ul > li {padding: 10px; font-size: 12px; border-top: 1px solid #ddd; line-height: 20px;}
+
+
+
+/*메인 오른쪽사이드*/
+
+/*책 정보*/
+.sub_m2 {width: 800px; height: auto;  padding: 0 10px 0 45px;}
+.sub_m2 > .book_title {width: 100%; height: auto;  border-bottom:1px solid #ddd; padding: 30px 0;}
+.sub_m2 > .book_title > .tags { width: 100%; height: 25px;}
+.sub_m2 > .book_title > .tags > li {float: left; border: 1px solid #ddd; padding: 5px; margin: 0 5px 0 0; font-size: 12px;}
+.sub_m2 > .book_title > h3 {font-size: 26px; color: #3a60df; margin: 10px 0;}
+.sub_m2 > .book_title > p {margin: 10px 0; font-size: 13px;}
+
+.sub_m2 > .book_title > .klover {display: flex; align-items: center;}
+.sub_m2 > .book_title > .klover > h3 {margin: 0 5px;}
+.sub_m2 > .book_title > .klover > p {font-size: 12px;}
+
+
+
+/*책 가격 -왼쪽*/
+.sub_m2 > .book_price { width: 100%; height: auto; border-bottom:1px solid #ddd; padding: 25px 0; display: flex; font-size: 13px;}
+.sub_m2 > .book_price > .bt_1 {width:575px; height: 230px;  }
+.sub_m2 > .book_price > .bt_1 > li {padding: 7px 0; font-size: 13px; display: flex; line-height: 15px;}
+.sub_m2 > .book_price > .bt_1 > li > .tbox {line-height: 30px; margin: 0 0 0 10px;} 
+
+
+/*span*/
+
+.c {color: #666; font-weight: bold; font-size: 13px;}
+.c1 {color:#f84450; font-size: 24px; font-weight: bold; line-height: 10px; margin: 0 10px;}
+.c2 {color:#5e6b9f; font-size: 13px;}
+.c3 {color:#3a60df; }
+.c4 {background-color: #7b8ed1; color: #fff;}
+.box {border: 1px solid #ddd; padding: 1px 5px; margin: 0 5px; font-size: 12px;}
+
+
+
+
+/*책 가격 -오른쪽*/
+
+.sub_m2 > .book_price > .bt_2 {width: 225px; height: 230px;  padding: 15px; border-left: 1px solid #ddd;}
+.bt_2 >.bt2_title {display: flex; justify-content: space-between;}
+.bt_2 >.bt2_title > h4 > a {color: #5e6b9f;}
+.bt_2 >.bt2_title > h4 > a > .c1 {font-size: 14px; margin: 0;}
+.bt_2 >.bt2_title > span {font-size: 11px; color: #666;}
+
+
+.sub_m2 > .book_price > .bt_2 > ul {margin: 15px 0 0 0;}
+.sub_m2 > .book_price > .bt_2 > ul > li {list-style: disc; list-style-position: inside; font-size: 12px; margin: 10px 0; line-height: 18px;}
+
+
+/*배송*/
+.sub_m2 > .book_delivery { width: 100%; height: auto; padding: 25px 0; border-bottom: 1px solid #ddd;}
+.sub_m2 > .book_delivery > p {line-height: 30px; font-size: 13px;}
+
+
+/*주문 버튼*/
+.sub_m2 > .book_btn {width: 100%; height: auto;  padding: 25px 0;}
+
+.sub_m2 > .book_btn > .sell_count {display: flex; align-items: center; margin: 0 0 20px 0;}
+.sub_m2 > .book_btn > .sell_count > p {font-size: 13px;}
+.sub_m2 > .book_btn > .sell_count > input {width: 50px; height: 30px; margin: 0 0 0 10px; }
+.sub_m2 > .book_btn > .sell_count > i {margin: 0 0 0 5px; font-size: 22px;}
+
+.sub_m2 > .book_btn > .buy_btn {width: 100%; height: 50px; display: flex; justify-content: space-between; }
+.sub_m2 > .book_btn > .buy_btn > li {float: left; width: 140px; height: 50px; border: 1px solid #ccc; text-align: center; }
+.sub_m2 > .book_btn > .buy_btn > li > a {line-height: 45px; font-weight: bold; color: #666;}
+
+.sub_m2 > .book_btn > .buy_btn > li:first-child {background-color: #5e6b9f;  border: 1px solid #5e6b9f; }
+.sub_m2 > .book_btn > .buy_btn > li:first-child > a {color: #fff;}
+.sub_m2 > .book_btn > .buy_btn > li:nth-child(2) {background-color: #7b8ed1; color: #fff; border: 1px solid #7b8ed1;}
+.sub_m2 > .book_btn > .buy_btn > li:nth-child(2) > a {color: #fff;}
+.sub_m2 > .book_btn > .buy_btn > li:nth-child(3) a {color: #193b78;}
+
+
+
+
+
+
+
+/*같이 구매한 책*/
+
+#width_buy {width: 1000px; height: auto; margin: 0 auto; }
+
+.stitle {width: 100%; height: 50px; }
+.stitle > h3 { font-weight: bold;  line-height: 50px;}
+
+
+.buy {width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;}
+.buy > .b_1,.b_2 {width: 5%; height: 60px; text-align: center;}
+.buy > .b_1,.b_2 > i {font-size: 50px; color: #ddd; line-height: 50px; }
+
+
+.buy > .b_list { width: 90%; height: 90%; display: flex; justify-content: space-between;}
+.buy > .b_list > li {float: left; width:16%; height: 100%;  text-align: center; margin: 10px 0 0 0;}
+.buy > .b_list > li > h3 {margin: 10px; font-size: 13px;}
+.buy > .b_list > li > h6 {font-size: 12px; color: #f84450; }
+.buy > .b_list > li > img {width: 100px; height: 150px; margin: 10px 0 0 0; border: 1px solid #ddd;}
+.buy > .b_list > li > img:hover {border: 1px solid #666;}
+
+
+
+
+#infowrap {width: 1000px; height: auto; margin: 0 auto; display: flex;}
+
+/*오른쪽 사이드*/
+.info_w2 {width: 220px; height: 1720px;  border: 1px solid #ddd;}
+.info_w2 > .sub_list { width: 100%; height: auto; border-bottom: 1px solid #ddd; padding: 15px;}
+.info_w2 > .sub_list:last-child {border-bottom: none;}
+
+
+.list_title {width: 100%; height: 20px;  display: flex; justify-content: space-between; font-size: 14px;}
+.list_title > p {font-size: 11px;}
+
+
+.list_content {width: 100%; height: auto; }
+
+.lboox,.lbox1 {width: 100%; height: auto;}
+
+.lbox > li {width: 100%; height: auto; margin: 10px 0; display: flex; }
+.lbox > li > a > img {width: 80px; height: 120px; border: 1px solid #ddd; margin: 0 5px 0 0;}
+.lbox > li > a > p {font-size: 12px; width: 100%; height: 15px; line-height: 14px;}
+.lbox > li > a > p >span {font-size: 12px; margin: 10px 5px 0 0; }
+
+.lbox1 > li {width: 100%; height: 120px;  margin: 15px 0; display: flex; flex-direction: column; flex-wrap: wrap;}
+.lbox1 > li > img {width: 80px; height: 120px; border: 1px solid #ddd;}
+.lbox1 > li > h3 {font-size: 12px; width: 100px; height: auto; margin: 10px 0 0 10px;}
+.lbox1 > li > p {font-size: 12px; width: 100px; height: 20px; margin: 20px 0 0 10px; color: #666;}
+.lbox1 > li > h6 {font-size: 12px; color: #f84450; margin: 0 0 0 10px;}
+
+
+/*왼쪽 사이드*/
+.info_w1 {width: 780px; height: auto; }
+
+
+
+/*상단 리스트 표시(공통)*/
+.info_list > ul { width: 100%; height: 45px;}
+.info_list > ul > li {width: 20%; height: 100%; font-weight: bold; text-align: center; float: left; line-height: 40px; font-size: 14px;  border:1px solid #ddd; }
+.info_list > ul > li:hover {background-color: #eee;}
+.info_list > ul > li:last-child:hover{background-color: #fff;}
+
+
+/*리스트 내의 공통*/
+
+.info_title {width: 100%; height: 20px; margin: 30px 0 20px 0; display: flex;}
+.info_title > span {font-size: 12px; line-height: 18px; margin: 0 0 0 10px;}
+.info_title > p {line-height: 22px; margin: 10px 0 15px 0; font-size: 13px;}
+.info_title > h3 {margin: 0 0 10px 0;}
+
+
+
+.info_content {padding: 0 20px; height: auto;}
+
+
+
+/*이벤트*/
+
+#event {width: 100%; height: 400px; margin: 0 auto; }
+#event > .info_list > ul > li:first-child {border-bottom: none; color: #365fdd;}
+#event > .info_list > ul > li:first-child:hover{background-color: #fff;}
+
+
+.event_content {display: flex; flex-wrap: wrap; padding: 0 20px;}
+.event_content > .event_box {width: 46%; height: 98px; display: flex; flex-direction: column; flex-wrap: wrap; margin: 0 20px 15px 0;}
+.event_content > .event_box > p {font-size: 14px; width: 160px;  margin: 8px 0; line-height: 16px;}
+
+
+
+/*상품정보*/
+#product_info {width: 100%; height: auto; margin: 0 auto; }
+#product_info > .info_list > ul > li:nth-child(2) {border-bottom: none; color: #365fdd;}
+#product_info > .info_list > ul > li:nth-child(2):hover{background-color: #fff;}
+
+.info_content > .box {float: right; margin: 30px 0 10px 0;}
+
+.book_isbn {width: 100%; height: 100px; font-size: 13px; border-collapse:collapse; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.book_isbn tr {line-height: 30px; border-bottom: 1px solid #ddd; margin: 10px 0 0 0;}
+.book_isbn th {font-weight: normal; border-right:1px solid #ddd;}
+.book_isbn td {padding: 0 0 0 10px;}
+
+
+
+.info_content > .info_title {display: flex; flex-direction: column; width: 100%; height: auto;}
+.info_content > .info_title > h6 { margin:15px 0 15px 0; font-size: 14px; color: #666;}
+.info_content > .info_title > p {margin: 0 0 8px 0; font-size: 13px;}
+
+.info_content > .info_title > ul {width: 100%; height: auto;}
+.info_content > .info_title > ul > li {font-size: 14px; float: left; border: 1px solid #ddd; padding: 7px 10px; margin: 0 10px 10px 0; border-radius: 15px;}
+
+.item_text {width: 100%; height: 380px; }
+.item_text > h3 {margin: 15px 0; font-size: 14px; line-height: 18px;}
+.item_text > ul {margin: 0 0 30px 0;}
+.item_text > ul > li {margin: 8px 0 0 0; font-size: 14px;}
+.item_text > p {font-size: 13px; line-height: 23px;}
+
+
+.video {width: 100%; height: auto; margin: 20px 0;}
+.video > iframe {width:680px; height:385px; border:none;}
+.video > h3 {margin: 0 0 10px 0; font-size: 14px;}
+.video > p {font-size: 13px; line-height: 20px;}
+
+
+.author_book {width:100%; height: 300px; border: 1px solid #ddd; }
+.author_book > h3 {margin: 15px 10px; font-size: 14px;} 
+.author_book > .author_box { width: 95%; height: 80%;  margin:0 0 0 18px; display: flex; align-items: center;}
+.author_book > .author_box > ul { width:90%; height: 90%; display: flex; }
+.author_book > .author_box > ul > li {width: 25%; height: 100%;  padding: 10px; text-align: center;}
+.author_book > .author_box > span {width:5%; height: 30%;  font-size: 50px; color: #ddd;}
+
+.author_01 > li > img {width: 100px; height: 140px; border: 1px solid #ddd;}
+.author_01 > li > h3 {font-size: 12px; margin: 10px 0;}
+.author_01 > li > p {font-size: 12px; color:#f84450; font-weight: bold; }
+
+
+
+.author_02 > li > img {width: 100px; height: 140px; border: 1px solid #ddd;}
+.author_02 > li > h3 {font-size: 12px; margin: 10px 0;}
+.author_02 > li > p {font-size: 12px; color:#f84450; font-weight: bold; }
+
+
+
+
+/*북로그*/
+#book_review {width: 100%; height: auto; margin: 0 auto; }
+#book_review > .info_list > ul > li:nth-child(3) {border-bottom: none; color: #365fdd;}
+#book_review > .info_list > ul > li:nth-child(3):hover{background-color: #fff;}
+
+
+.review_title {width: 100%; height: auto;  display: flex; margin: 50px 0 15px 0;}
+.review_content1 {background-color: #eee; font-size: 13px; padding: 20px;}
+.review_content1 > h4 {margin: 0 0 10px 0;}
+
+.review_content2 {display: flex; flex-direction: column; margin: 0 0 20px 0;}
+.review_content2 > .rbox {width: 100%; height: auto; margin: 10px 0 5px 0;}
+.review_content2 > .rbox > p {margin: 10px 0; line-height: 22px; font-size: 13px;}
+
+.r_title {display: flex;}
+.r_title > ul > li {float: left; padding: 5px; font-size: 13px;}
+.r_title > h3 { margin: 5px 10px 5px 0;}
+.r_title > h3:hover > a {text-decoration: underline; color: #365fdd;}
+.r_title > h3 > a {font-size: 13px; color: #666;}
+
+
+.info_content > .page {width: 48%; height: 50px; margin: 0 0 50px 190px;}
+.info_content > .page  > li {float: left; padding: 5px; font-size: 14px;}
+
+
+
+
+
+/*교환/환불*/
+#product_change {width: 100%; height: 900px; margin: 0 auto; }
+#product_change > .info_list > ul > li:nth-child(4) {border-bottom: none;  color: #365fdd;}
+#product_change > .info_list > ul > li:nth-child(4):hover{background-color: #fff;}
+
+
+.change_title > h3 {margin: 50px 0 10px 0;}
+.change_title > p {font-size: 13px; margin: 0 0 15px 0;}
+
+.change_list {width: 100%; height: 240px; font-size: 13px; border-collapse:collapse; border: 1px solid #ddd;}
+.change_list tr {border:1px solid #ddd; line-height: 25px;}
+.change_list tr th {font-weight: normal; background-color: #eee; width: 150px; margin: 10px;}
+.change_list tr td {padding: 0 0 0 10px; border: 1px solid #ddd;  margin: 10px;}
+.change_list tr td > ul > li {list-style: disc; list-style-position: inside;}
+
+
+
+
+/*베스트 기프트*/
+#gift_best {width: 100%; height: auto; margin: 0 auto; }
+.gift_title {display: flex; justify-content: space-between; padding: 0 20px;  margin: 0 0 40px 0;}
+.gift_title > p {font-size: 12px;}
+
+.gift_box {width: 100%; height: 380px;  padding: 0 20px;}
+.gift_box > .gbox {width: 100%; height: 300px; display: flex; align-items: center;}
+
+.gift_box > .gbox > span {width: 5%; height: 50%;  font-size: 50px; color: #ddd;}
+
+.gift_list {width: 90%; height: 100%;  display: flex; justify-content: space-around;}
+.gift_list > li {width: 30%; height: 100%;  float: left; text-align: center;}
+.gift_list > li > a > img {width: 100%; height: 200px; border: 1px solid #ddd;}
+.gift_list > li > a > h3 {width: 100%; margin: 15px 0; font-size: 13px; font-weight: normal;  line-height: 16px;}
+.gift_list > li > a > p {font-size: 13px; font-weight: bold; color: #666;}
+.gift_list > li > a > p > span {color: #d1a05d; }
