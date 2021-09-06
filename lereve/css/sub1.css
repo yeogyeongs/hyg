@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+
+      #submenu {width:100%; height:50px; border-top:1px solid #ddd;}
+      #submenu > div {width:1100px; height:50px; margin:0 auto;}
+      #submenu > div > ul {font-size:12px; color:gray;}
+      #submenu > div > ul > li {float:left; margin:19px 10px 0 0;}
+      #submenu > div > ul > li > a {text-decoration:none; color:#666; }
+
+     #sub {width:1100px; height:780px; margin:0 auto; }
+      #sub >.products {width:550px; height:700px; float:left; margin:0 30px 0 0; }
+      .w1 {width:550px; height:550px;}
+      #sub >.products >.image {width:560px; height:130px; float:left;}
+      #sub >.products >.image > ul > li > img {width:130px; height:130px; float:left; margin:10px 10px 0 0px;}
+      #sub >.text {width:520px; height:700px; float:right; margin:0;}
+
+      .b1 {border-bottom:1px solid #dedcdc; height:150px;}
+      .b1 > h3 {float:left; margin:0; width:520px; font-size:24px; font-weight:bold; margin:0;}
+      .b1 > span.a {float:left; margin:15px 20px 0 0; padding:5px; border:1px solid gray; color:gray; font-size:12px;}
+      .b1 > span.b {float:left; margin:15px 0 0 0; padding:5px; font-size:12px; display:block;}
+      .pbox {width:100%; height:25px; margin:100px 0 0 0;}
+      .pbox > span {width:60%; float:left; font-size:24px;}
+      .pbox > div > img {width:25px; height:25px; float:right; margin:0 15px 0 0;}
+
+      table {float:left; margin:0; border-collapse:collapse;}
+      .table1 tr {border-bottom:1px solid #eee;}
+      .table1 td {padding:20px 0px; font-size:16px;}
+      .table1 td:first-child {width:150px; height:20px;}
+      .table1 tr:last-child {border-bottom:none; margin:0;}
+      .table1 td > select {background-color:#eee; border:1px solid #ddd; width:370px; height:40px; font-size:16px; float:right; }
+
+
+      .button1 {border:none; width:255px; height:60px;  font-weight:bold; font-size:16px; float:left; margin:16px 0; border-radius:5px;}
+      .button1:first-of-type {background-color:tomato; width:520px; height:60px; color:#fff;}
+      .button1:first-of-type:hover {background-color:#fff; color:black; border:2px solid tomato;}
+      .button1:nth-of-type(2) {float:left; border:1px solid #eee; margin:5px 0 0 0;}
+      .button1:nth-of-type(2):hover {border:2px solid #ddd;}
+      .button1:nth-of-type(3) {float:right; border:1px solid #eee; margin:5px 0 0 0;}
+      .button1:nth-of-type(3):hover {border:2px solid #ddd;}
+
+      .p1 {font-size:20px; margin:0 0 25px 0px; float:left; width:520px; text-align:right;}
+      .p1 > span {font-weight:bold; font-size:24px;}      
+
+      section {width:1100px; height:9300px; margin:0 auto; border-top:1px solid #eee;}
+      #content1 {width:1100px; height:400px;}
+      #content1 > h3 {text-align:center; line-height:30px; margin:0 auto; background-color:#ddd; width:200px; height:34px; border-bottom-left-radius:15px; border-bottom-right-radius:15px; font-size:14px;} 
+      #content1 > .box1 {width:200px; height:270px; float:left; margin:40px 25px 0 0;}
+      #content1 > .box1:last-child {float:right; margin:40px 0 0 0;}
+      #content1 > .box1 > a > img {width:200px; height:200px;}
+      #content1 > .box1 > p {font-size:12px; margin:3px 0 0 0; line-height:18px; height:40px; text-align:center;}
+      #content1 > .box1 > p > a {text-decoration:none; color:black;}
+      #content1 > .box1 > p > span {float:left; margin:5px 0 0 75px;}
+
+      #content2 {width:1100px; height:5300px;}
+      #content2 > ul {margin:0 auto; width:780px; height:50px; font-size:14px;}
+      #content2 > ul > li {float:left; margin:5px 0 0 28px; padding:10px 30px; border-radius:20px; border:1px solid #ddd;}
+      #content2 > ul > li > a {text-decoration:none; color:black;}
+      #content2 > ul > li:first-child {padding:10px 50px; display:inline-block; background-color:#ddd; border-radius:20px;}
+      #content2 > h4 {float:right; text-align:right; color:black; font-size:24px; margin:150px 50px 0 0; line-height:32px;}
+
+      #content2 > .image {width:1000px; height:700px; background-color:blue; float:left; margin:300px 0 0 50px;}
+      #content2 > .image:first-of-type {margin:20px 0 0 50px; float:left;}
+      #content2 > .image > h5 {float:left; text-align:center; color:#666; font-size:30px; margin:30px 0 0 350px; line-height:50px;}
+      #content2 > .image > p {float:left; text-align:center; color:#666; font-size:18px; margin:15px 0 0 0; width:1000px; height:200px; line-height:30px;}
+      #content2 > .image > span {float:left; text-align:center; color:#666; font-size:20px; margin:40px 0 0 0; width:1000px; height:200px; font-weight:bold; line-height: 30px;}
+      #content2 > .image > img {width:1000px; height:700px;}
+
+      #content3 {width:1100px; height:800px;}
+      #content3 > ul {margin:0 auto; width:780px; height:50px; font-size:14px;}
+      #content3 > ul > li {float:left; margin:5px 0 0 28px; padding:10px 30px; border-radius:20px; border:1px solid #ddd;}
+      #content3 > ul > li > a {text-decoration:none; color:black;}
+      #content3 > ul > li:nth-child(2) {padding:10px 50px; display:inline-block; background-color:#ddd; border-radius:20px;}
+      #content3 >.box2 {width:210px; height:280px; float:left; margin:50px 12px 0 0; }
+      #content3 >.box2 > a > img {width:210px; height:210px; display:block; border:1px solid #ddd;  box-sizing: border-box;}
+      #content3 >.box2 > p {font-size:12px; margin:3px 0 0 0; line-height:18px; height:40px; text-align:center;}
+      #content3 >.box2 > p > a {text-decoration:none; color:black;}
+      #content3 >.box2 > p > span {float:left; margin:5px 0 0 75px;}
+      #content3 >.box2:nth-of-type(5n) {float:right; margin:50px 0 0 0;}
+
+      #content4 {width:1100px; height:1100px;}
+      #content4 > ul {margin:0 auto; width:780px; height:50px; font-size:14px;}
+      #content4 > ul > li {float:left; margin:5px 0 0 28px; padding:10px 30px; border-radius:20px; border:1px solid #ddd;}
+      #content4 > ul > li > a {text-decoration:none; color:black;}
+      #content4 > ul > li:nth-child(3) {padding:10px 50px; display:inline-block; background-color:#ddd; border-radius:20px;}
+      #content4 >.textbox {width:800px; height:800px; margin:50px 100px; padding:59px; border:1px solid #ddd;}
+      #content4 >.textbox > h3 {font-size:16px; line-height:24px; }
+      #content4 >.textbox > p {font-size:14px; line-height:20px;}
+
+
+      #content5 {width:1100px; height:850px;}
+      #content5 > ul {margin:0 auto; width:780px; height:50px; font-size:14px;}
+      #content5 > ul > li {float:left; margin:5px 0 0 28px; padding:10px 30px; border-radius:20px; border:1px solid #ddd;}
+      #content5 > ul > li > a {text-decoration:none; color:black;}
+      #content5 > ul > li:nth-child(4) {padding:10px 50px; display:inline-block; background-color:#ddd; border-radius:20px;}
+      #content5 > h4 {float:left; text-align:center; color:gray; font-size:20px; margin:50px 0 0 0; width:1100px; height:50px; color:black;}
+      .table3 { width:1100px; height:350px; font-size:12px; float:left; margin:30px 0 0 0;  border-collapse:collapse;}
+      .table3 td {border-bottom:1px solid #ddd;  line-height:17px;}
+      .table3 tr > img {margin:10px 0 0 0;}
+      .table3 td > div {width:80px; height:20px; margin:10px 0 0 0;}
+      .table3 td > div > img {width:80px; height:20px;}
+      #content5 > div {width:240px; height:50px; float:left; margin:70px 0 0 430px;}
+      #content5 > div >.button3 {border:0; outline:0; background-color:#fff; float:left; margin:0 20px 0 0px;}
+      #content5 > div >.button3:hover {color:#ddd;}
+     
+ 
+      #content6 {width:1100px; height:850px;}
+      #content6 > ul {margin:0 auto; width:780px; height:50px; font-size:14px;}
+      #content6 > ul > li {float:left; margin:5px 0 0 28px; padding:10px 30px; border-radius:20px; border:1px solid #ddd;}
+      #content6 > ul > li > a {text-decoration:none; color:black;}
+      #content6 > ul > li:nth-child(5) {padding:10px 50px; display:inline-block; background-color:#ddd; border-radius:20px;}
+      #content6 > h4 {float:left; text-align:center; color:gray; font-size:20px; margin:50px 0 0 0; width:1100px; height:50px; color:black;}
+
+      .table4 { margin:30px 0 0 0; width:1100px; height:500px; font-size:12px;}
+      .table4 td {border-bottom:1px solid #ddd; line-height:45px; }
+      .button2 {width:60px; height:30px; border-radius:0; margin:10px 0 0 10px; float:right; font-size:11px;}
+      #content6 > div {width:240px; height:50px; float:left; margin:70px 0 0 430px;}
+      #content6 > div >.button3 {border:0; outline:0; background-color:#fff; float:left; margin:0 20px 0 0px;}
+      #content6 > div >.button3:hover {color:#ddd;}
+      
+   
