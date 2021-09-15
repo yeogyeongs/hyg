@@ -15,7 +15,7 @@ $(function(){
 			i = 0;
 		}
 	}
-	setInterval(typing, 200)
+	setInterval(typing, 100)
 
 
 
