@@ -2,7 +2,7 @@
 
 $(function(){
 
-	const content = "Developer / Front end / Javascript";
+	const content = "Web developer / Front end / Javascript \n  Json / Open api / Responsible web / Ajax";
 	const text = document.querySelector(".title");
 	let i = 0;
 
