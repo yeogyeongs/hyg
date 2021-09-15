@@ -49,7 +49,7 @@ aside { position: fixed; top: 30%; left:100%; transform: translateX(-100%); z-in
 .top_img > img:first-child {width: 70%; height: auto; position: absolute; top: 50%; left: 50%; transform: translateX(-50%);}
 .top_img > img:last-child {width: 15%; height: auto; position: absolute; z-index: 2; top: 35%; left: 45%; transform: translateX(-45%);}
 
-.title {width: 700px; height: 100px; position: absolute; top: 25%; left: 50%; transform: translateX(-50%); text-align: center; color: #fff; font-size: 30px;}
+.title {width: 700px; height: 80px; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); text-align: center; color: #fff; font-size: 30px;}
 
 
 
